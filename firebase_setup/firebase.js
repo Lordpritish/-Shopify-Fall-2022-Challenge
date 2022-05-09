@@ -18,7 +18,7 @@ const db = getFirestore(app);
 // // Create a root reference
 const bucket = admin.storage().bucket()
 
-module.exports = { db, bucket ,admin}
+module.exports = { db, bucket, admin }
 
 
 
