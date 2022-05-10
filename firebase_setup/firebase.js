@@ -10,7 +10,7 @@ var admin = require("firebase-admin");
 
 const app = admin.initializeApp({
     credential: cert(serviceAccount),
-    storageBucket: process.env.BUCKET_URL
+    storageBucket: process.env.BUCKET_URL || "gs://shopifyf22.appspot.com"
 });
 
 const db = getFirestore(app);

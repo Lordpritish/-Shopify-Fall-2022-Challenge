@@ -51,7 +51,6 @@ const view_shipments = async (req, res) => {
 
     });
     bar.then(() => {
-        console.log("end")
         const result = { "shipments": temp }
         return res.json(result);
     });
@@ -78,9 +77,16 @@ const assign_inventory = async (req, res) => {
                     quantity: item.quantity - parseInt(req.body.quantity)
                 });
 
-                await shipments.doc(req.body.shipment_id).collection("items").doc(req.body.item_id).set({
-                    quantity: req.body.quantity
-                });
+
+                try {
+                    await shipments.doc(req.body.shipment_id).collection("items").doc(req.body.item_id).update({
+                        quantity: admin.firestore.FieldValue.increment(parseInt(req.body.quantity))
+                    });
+                } catch (error) {
+                    await shipments.doc(req.body.shipment_id).collection("items").doc(req.body.item_id).set({
+                        quantity: parseInt(req.body.quantity)
+                    });
+                }
                 return res.send("Success")
             }
             else
