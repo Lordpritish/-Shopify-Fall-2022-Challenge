@@ -102,22 +102,22 @@ const assign_inventory = async (req, res) => {
 
 }
 
-const delete_shipment = async (req, res) => {
+// const delete_shipment = async (req, res) => {
 
-    const shipment = db.collection('shipments');
-    const doc = await shipment.doc(req.params.shipment_id).get();
+//     const shipment = db.collection('shipments');
+//     const doc = await shipment.doc(req.params.shipment_id).get();
 
-    if (doc.exists) {
-        await db.collection('shipments').doc(req.params.shipment_id).delete();
-        return res.send("Deleted Successfully");
-    }
-    else
-        return res.status(400).send("shipment doesnt exist")
-}
+//     if (doc.exists) {
+//         await db.collection('shipments').doc(req.params.shipment_id).collection("items").dele
+//         await db.collection('shipments').doc(req.params.shipment_id).delete();
+//         return res.send("Deleted Successfully");
+//     }
+//     else
+//         return res.status(400).send("shipment doesnt exist")
+// }
 
 module.exports = {
     create_shipment,
-    delete_shipment,
     view_shipments,
     assign_inventory
 }

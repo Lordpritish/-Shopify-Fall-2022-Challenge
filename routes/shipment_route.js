@@ -6,6 +6,6 @@ const { ShipmentController } = require('../controllers')
 router.post('/create', ShipmentController.create_shipment)
 router.put('/assign', ShipmentController.assign_inventory)
 router.get('/view', ShipmentController.view_shipments)
-router.delete('/delete/:shipment_id', ShipmentController.delete_shipment)
+// router.delete('/delete/:shipment_id', ShipmentController.delete_shipment)
 
 module.exports = router;
