@@ -87,12 +87,12 @@ node index.js
     }
      ```
    - Sample Postman Request:
-    ![Screen Shot 2022-01-19 at 6 47 41 PM](https://user-images.githubusercontent.com/60456975/150245325-9d0f7855-158b-412e-bad6-661e12678fda.png)
-  
+    ![Screen Shot 2022-05-10 at 1 06 52 PM](https://user-images.githubusercontent.com/60456975/167696024-e99b708c-7ed2-4cc7-9316-b50152fc4488.png)
     
 - **View inventory** : GET {/api/inventory/view}
    - Sample Postman Request:
-   ![Screen Shot 2022-01-19 at 6 48 57 PM](https://user-images.githubusercontent.com/60456975/150245621-8b61ef05-b4db-4a1f-b2c3-a46430c12bb3.png)
+   ![Screen Shot 2022-05-10 at 1 07 39 PM](https://user-images.githubusercontent.com/60456975/167696082-3d503b02-c604-4f56-9034-d8b8dd07f352.png)
+
 
 - **Edit inventory item** : PUT {/api/inventory/edit}
   - You have to use the item_id of the  inventory item which we wihs update from the repsone of the create inventory request 
@@ -105,12 +105,14 @@ node index.js
    ```
 
    - Sample Postman Request:
-   ![Screen Shot 2022-01-19 at 6 50 27 PM](https://user-images.githubusercontent.com/60456975/150245424-81ee4c21-b97b-4b9d-adc6-183291e7f425.png)
+   ![Screen Shot 2022-05-10 at 1 08 20 PM](https://user-images.githubusercontent.com/60456975/167696134-44ee7cb2-ed0f-4901-977a-16a00603deac.png)
+
 
 - **Delete inventory item** : DELETE {/api/inventory/delete/$item_id}
    - In the request url replace $item_name with the item you want to delete from the inventory
    - Sample Request:
-   ![Screen Shot 2022-01-19 at 6 51 51 PM](https://user-images.githubusercontent.com/60456975/150245497-1c9ba362-b10f-4192-a47f-2bdb0addaf5d.png)
+   ![Screen Shot 2022-05-10 at 1 09 32 PM](https://user-images.githubusercontent.com/60456975/167696197-db69911e-ee85-42a1-9409-2095ac0c1843.png)
+
 
 
 <p align="center">
@@ -137,7 +139,7 @@ node index.js
     }
      ```
   - Sample Postamn Request:
-  ![Screen Shot 2022-01-19 at 8 32 56 PM](https://user-images.githubusercontent.com/60456975/150246429-2e202895-b122-4d09-962d-b75f192b033e.png)
+   ![Screen Shot 2022-05-10 at 1 38 28 PM](https://user-images.githubusercontent.com/60456975/167696248-64648e3d-3b0e-4fb7-bcb0-4219165c2655.png)
 
   
 - **Assign Inventory items to Shipment** : PUT {/api/shipment/assign}
@@ -152,11 +154,12 @@ node index.js
    }
    ```
   - Sample Postman Request:
-  ![Screen Shot 2022-01-19 at 8 33 13 PM](https://user-images.githubusercontent.com/60456975/150246468-379b50c5-3e94-4bd8-afbb-5a514ef9c176.png)
+   ![Screen Shot 2022-05-10 at 1 58 53 PM](https://user-images.githubusercontent.com/60456975/167696274-d2028b0a-47d8-4f7d-b4d5-bb82e3ddee8c.png)
 
 - **View all Shipments** : GET {/api/shipment/view}
   - Sample Postman Request:
-  ![Screen Shot 2022-01-19 at 8 33 13 PM](https://user-images.githubusercontent.com/60456975/150246468-379b50c5-3e94-4bd8-afbb-5a514ef9c176.png)
+  ![Screen Shot 2022-05-10 at 1 59 32 PM](https://user-images.githubusercontent.com/60456975/167696347-53d6fa18-d7e7-45f0-9257-dfd75b94cd23.png)
+
 
 <p align="center">
     <u><h2 align="center">Future Features</h2></u>
