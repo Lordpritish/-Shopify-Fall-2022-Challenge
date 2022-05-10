@@ -12,7 +12,7 @@
     * Ability to create “shipments” and assign inventory to the shipment, and adjust inventory appropriately
 
 # For a video demonstration visit
--  [Youtube Video](https://www.youtube.com/watch?v=U19rjLJybpw)
+-  [Youtube Video](https://youtu.be/R3RvUv43U9M)
 
 # Table of Contents
 - [Installations](#installations)
