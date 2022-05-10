@@ -105,7 +105,7 @@ const assign_inventory = async (req, res) => {
 const delete_shipment = async (req, res) => {
 
     const shipment = db.collection('shipments');
-    const doc = await shipment.doc(req.params.item_name).get();
+    const doc = await shipment.doc(req.params.shipment_id).get();
 
     if (doc.exists) {
         await db.collection('shipments').doc(req.params.shipment_id).delete();
