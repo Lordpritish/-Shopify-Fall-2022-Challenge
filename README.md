@@ -15,7 +15,8 @@
 -  [Youtube Video](https://youtu.be/R3RvUv43U9M)
 
 # Table of Contents
-- [Installations](#installations)
+- [Installations to run the application locally](#installations)
+- [How to Run it](#How-to-run-it)
 - [CRUD Functionality](#CRUD-Functionality)
 - [Shipment](#shipment)
 - [Future Features](#future-features)
